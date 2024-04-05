@@ -1,0 +1,21 @@
+{
+  "name": "@hgf01/markdown-ide",
+  "version": "0.0.1",
+  "description": "markdown编辑器",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.20.2"
+  },
+  "devDependencies": {
+    "esbuild-plugin-less": "^1.3.3",
+    "less": "^4.2.0"
+  }
+}

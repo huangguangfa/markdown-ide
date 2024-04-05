@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../dist/style/index.css">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 100vw;height: 500px;" id="box">
+
+  </div>
+</body>
+</html>
+
+<script type="module">
+  import { MarkdownIde } from '../dist/index.js'
+
+  const preview =  new MarkdownIde({
+    el: document.getElementById('box'),
+    content: `## test
+    
+    \`\`\`JS
+const name = '李四'
+
+function test(){
+  return name
+}
+
+test()
+\`\`\`
+
+
+[这是一个链接](http://www.baidu.com)
+
+水果名称| 价格 |  数量
+-|-|-
+香蕉 | $1 | 5 |
+苹果 | $1 | 6 |
+草莓 | $1 | 7 |
+
+
+> [!warning]
+> 警告文字
+
+> [!Note]
+> 注释文字
+
+> [!Important]
+> 重要文字
+
+> [!Caution]
+> Caution
+    `
+  })
+</script>

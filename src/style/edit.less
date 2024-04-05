@@ -1,0 +1,32 @@
+.md-ide-markdownide{
+  &-edit{
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+
+    &_wrap{
+      width: 100%;
+      height: 100%;
+    }
+    .cm-editor{
+      height: calc(100% - 22px);
+    }
+    .cm-scroller::-webkit-scrollbar {
+      width: 0px;
+    }
+    .cm-scroller::-webkit-scrollbar-track {
+      width: 0px;
+    }
+    .cm-scroller::-webkit-scrollbar-thumb {
+      height: 5px;
+      background-color: rgba(139, 96, 240, .1);
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .cm-scroller::-webkit-scrollbar-thumb:hover {
+      background: rgba(139, 96, 240, .2);
+    }
+  }
+}
+
+

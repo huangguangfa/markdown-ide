@@ -1,0 +1,59 @@
+@import url('./src/style/edit.less');
+@import url('./src/style/footer.less');
+@import url('./src/style/preview.less');
+.md-ide-markdownide{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eee;
+  position: relative;
+  box-sizing: border-box;
+  &__seekBar{
+    width: 15px;
+    cursor: col-resize;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 100%;
+    border-left: 1px solid rgb(238, 238, 238);
+  }
+  &_vueCodePreview{
+    border-radius: 2px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.09), 0 0px 1px 0 rgba(0, 0, 0, 0.23);
+    position: relative;
+    pre{
+      margin: 0;
+    }
+    table {
+      display: table;
+      td, tr, th{
+        border: none;
+        font-weight:400;
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+  }
+  &_vue{
+    padding: 10px;
+    &-tips{
+      font-size: 12px;
+      color: #e4dfdf;
+      position: absolute;
+      right: 10px;
+      top: 3px;
+      transform: scale(0.9);
+    }
+  }
+  &-preview {
+    flex: 1;
+    height: auto;
+  }
+}
+.markdown-body{
+  font-size: 14px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
